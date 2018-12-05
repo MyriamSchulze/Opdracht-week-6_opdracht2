@@ -1,0 +1,90 @@
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: teal;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-name {
+    font-size: 24px;
+    padding-left: 1rem;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem 0 0;
+ }
+ li {
+    list-style-type: none;
+ 
+}
+.nav-link {
+    text-decoration:none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    /*Ik heb bovenstaande padding nog even laten staan, want ik begrijp nog steeds niet hoe ik de flex-container m.b.v. flex-grow groter kan maken (welke flex-container moet ik dan pakken, ik denk nog steeds navigation-list? Daarom lukt ruimte om de linkjes met justify-content: space-around nog steeds niet  */
+}
+.mid-section {
+    display: flex;
+    flex-direction: row; 
+}
+.sidebar {
+    background-color: beige;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+}
+h2.sidebar-title {
+    font-size: 1rem;
+    align-self: flex-start;
+}
+figure.sidebar-image {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+[src="https://placekitten.com/350/500"] {
+    max-width: 100%;
+}
+.main-section {
+    flex: 7;
+}
+.main-section-top {
+   order: 0;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: white;
+   display: flex;
+   flex-direction: row;
+}
+.main-content {
+    padding: 1rem 2rem;
+    flex: 5;
+}
+.main-title {
+    margin: 20px 0px;
+}
+[src="https://placekitten.com/700/1000"] {
+    max-width: 100%;
+}
+footer.main-section-bottom {
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
